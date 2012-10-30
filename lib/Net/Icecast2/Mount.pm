@@ -1,6 +1,6 @@
 package Net::Icecast2::Mount;
 {
-  $Net::Icecast2::Mount::VERSION = '0.001';
+  $Net::Icecast2::Mount::VERSION = '0.002';
 }
 # ABSTRACT: Icecast2 Server Mount API
 use Moo;
@@ -19,7 +19,7 @@ Net::Icecast2::Mount - Icecast2 Server Mount API
 
   use Net::Icecast2::Mount;
 
-  my $icecast_mount = new Net::Icecast2::Mount(
+  my $icecast_mount = Net::Icecast2::Mount->new(
       host => 192.168.1.10,
       port => 8008,
       protocol => 'https',

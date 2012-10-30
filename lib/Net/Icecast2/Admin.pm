@@ -1,6 +1,6 @@
 package Net::Icecast2::Admin;
 {
-  $Net::Icecast2::Admin::VERSION = '0.001';
+  $Net::Icecast2::Admin::VERSION = '0.002';
 }
 # ABSTRACT: Icecast2 Server Admin API
 use Moo;
@@ -14,7 +14,7 @@ Net::Icecast2::Admin - Icecast2 Server Admin API
 
   use Net::Icecast2::Admin;
 
-  my $icecast_admin = new Net::Icecast2::Admin(
+  my $icecast_admin = Net::Icecast2::Admin->new(
       host => 192.168.1.10,
       port => 8008,
       protocol => 'https',
