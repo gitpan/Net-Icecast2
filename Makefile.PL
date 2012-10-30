@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     "Sub::Quote" => 0,
     "XML::Simple" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

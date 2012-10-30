@@ -1,6 +1,6 @@
 package Net::Icecast2::Mount;
 {
-  $Net::Icecast2::Mount::VERSION = '0.002';
+  $Net::Icecast2::Mount::VERSION = '0.003';
 }
 # ABSTRACT: Icecast2 Server Mount API
 use Moo;

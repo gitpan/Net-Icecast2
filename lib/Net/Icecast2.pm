@@ -1,6 +1,6 @@
 package Net::Icecast2;
 {
-  $Net::Icecast2::VERSION = '0.002';
+  $Net::Icecast2::VERSION = '0.003';
 }
 # ABSTRACT: Icecast2 Server API
 use Moo;
@@ -102,8 +102,9 @@ has password => (
 has _user_agent => (
     is       => 'ro',
     isa      => quote_sub( q{
-        ref $_[0] eq 'LWP::UserAgent'
-            or die "_user_agent should be 'LWP::UserAgent' ref";
+        use Safe::Isa;
+        $_[0]->$_isa('LWP::UserAgent')
+            or die "_user_agent should be 'LWP::UserAgent'";
     }),
     lazy     => 1,
     builder  => '_build__user_agent',
@@ -143,7 +144,7 @@ sub request {
     $response->is_success or croak 'Error on request: ' .
         ( $response->code eq 401 ? 'wrong credentials' : $response->status_line );
 
-    new XML::Simple->XMLin( $response->content );
+    XML::Simple->new->XMLin( $response->content );
 }
 
 no Moo;
