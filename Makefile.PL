@@ -31,10 +31,11 @@ my %WriteMakefileArgs = (
     "Moo" => 0,
     "MooX::Types::MooseLike::Base" => 0,
     "PHP::HTTPBuildQuery" => 0,
+    "Safe::Isa" => 0,
     "Sub::Quote" => 0,
     "XML::Simple" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }

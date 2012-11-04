@@ -1,12 +1,13 @@
 package Net::Icecast2;
 {
-  $Net::Icecast2::VERSION = '0.003';
+  $Net::Icecast2::VERSION = '0.004';
 }
 # ABSTRACT: Icecast2 Server API
 use Moo;
 use MooX::Types::MooseLike::Base qw(Str Int);
 
 use Carp;
+use Safe::Isa;
 use Sub::Quote qw( quote_sub );
 use LWP::UserAgent;
 use XML::Simple;
