@@ -1,6 +1,6 @@
 package Net::Icecast2;
 {
-  $Net::Icecast2::VERSION = '0.004';
+  $Net::Icecast2::VERSION = '0.005';
 }
 # ABSTRACT: Icecast2 Server API
 use Moo;

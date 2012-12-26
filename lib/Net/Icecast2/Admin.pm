@@ -1,6 +1,6 @@
 package Net::Icecast2::Admin;
 {
-  $Net::Icecast2::Admin::VERSION = '0.004';
+  $Net::Icecast2::Admin::VERSION = '0.005';
 }
 # ABSTRACT: Icecast2 Server Admin API
 use Moo;

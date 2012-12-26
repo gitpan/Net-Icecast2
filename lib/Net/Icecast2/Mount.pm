@@ -1,6 +1,6 @@
 package Net::Icecast2::Mount;
 {
-  $Net::Icecast2::Mount::VERSION = '0.004';
+  $Net::Icecast2::Mount::VERSION = '0.005';
 }
 # ABSTRACT: Icecast2 Server Mount API
 use Moo;
@@ -58,9 +58,11 @@ Make request for Icecast2 Server Mount API
 =cut
 
 =head2 protocol
+
   Description : Icecast2 Server protocol ( scheme )
   Default     : http
   Required    : 0
+
 =cut
 
 =head2 login

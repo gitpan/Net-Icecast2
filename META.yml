@@ -32,4 +32,4 @@ requires:
 resources:
   bugtracker: http://github.com/R3VoLuT1OneR/Net-Icecast2/issues
   repository: http://github.com/R3VoLuT1OneR/Net-Icecast2
-version: 0.004
+version: 0.005
